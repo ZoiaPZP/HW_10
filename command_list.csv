@@ -1,0 +1,16 @@
+  160  git add .\n
+  161  git add .main_test.txt\n
+  162  git status\n
+  163  git commit -m "Added file main_test.txt"\n
+  164  git checkout -b develop\n
+  165  touch develop_test.txt\n
+  166  git add .develop_test.txt\n
+  167  git add .
+  168  git commit -m "Added file develop_test.txt"\n
+  169  echo "Changes in the files develop_test.txt" >> develop_test.txt\n
+  170  git status\n
+  171  git add .\n
+  172  git commit -m "Changes have been made to the file develop_test.txt"\n
+  173  git checkout main\n
+  174  git merge develop\n
+  175  git log\n
